@@ -470,8 +470,8 @@ class MultiPing(object):
         """
             Close sockets descriptors.
         """
-        _sock.close()   # TODO: probably need add some verifications.
-        _sock6.close()
+        self._sock.close()   # TODO: probably need add some verifications.
+        self._sock6.close()
 
 
 def multi_ping(dest_addrs, timeout, retry=0, ignore_lookup_errors=False):
